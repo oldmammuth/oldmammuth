@@ -1,0 +1,35 @@
+---
+layout: default
+ref: index
+lang: it
+---
+
+<div class="home">
+  <div class="page-header">
+	  <h1>L'antro del Ranting Master</h1>
+  </div><!-- /.page-header -->
+  <p>
+  Benvenuti nell'antro del Rant Master, un sito personale con lo scopo principale di salvare lo stato dei miei porogetti per riprenderli in futuro,
+  e far sapere agli altri su cosa sto lavorando ultimamente (niente di buono, posso assicurarvi...)<br>
+  Nelle mie sparate assurde (dette anche articoli) saro breve e conciso.. disse <em>Pinocchio</em>...
+  Io non concordo col nostro legnoso amico, però!<br>
+  </p>
+
+  <h2 class="page-heading">Articoli</h2>
+
+  <ul class="post-list">
+    {% assign posts=site.posts | where:"lang", page.lang %}
+    {% for post in posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">seguirci tramite il <a href="{{ "/flux.xml" | prepend: site.baseurl }}">flux RSS</a></p>
+
+</div>
