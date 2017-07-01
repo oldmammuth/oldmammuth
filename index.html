@@ -1,15 +1,34 @@
 ---
 layout: default
-title: Ranting Master
+ref: index
+lang: en
 ---
-<div class="page-header">
-	<h1>Ranting Master</h1>
-</div><!-- /.page-header -->
-<p>
-Welcome to the Ranter Master's den, a personal site with the main purpose of saving my work status for later, and making known to my fellows what I am up to lately...<br>
-In my rants, I'll try to be short and to the point, said <em>Pinocchio</em>... I surely disagree with him...<br>
-</p>
-<p>
-<a href="/about">Read more about me...</a><br>
-<a href="/blog">Read more me rants about...</a><br>
-</p>
+<div class="home">
+  <div class="page-header">
+	  <h1>Ranting Master's Den</h1>
+  </div><!-- /.page-header -->
+  <p>
+  Welcome to the Ranter Master's den, a personal site with the main purpose of saving my work status for later, 
+  and making known to my fellows what I am up to lately...<br>
+  In my rants, I'll try to be short and to the point, said <em>Pinocchio</em>... 
+  I surely disagree with him...<br>
+  </p>
+
+  <h2 class="page-heading">Posts</h2>
+
+  <ul class="post-list">
+    {% assign posts=site.posts | where:"lang", page.lang %}
+    {% for post in posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div><!-- /.homer -->

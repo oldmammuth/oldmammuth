@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "SentinelMap Services Quickstart Tutorial"
+ref: sentservices_leaflet_quickstart
 date: 2017-06-20
+categories: leaflet SentinelMap
+lang: en
 ---
 
 (post originally for: [SentinelMap Services Wiki](https://github.com/sentinelmap/sentinelmap-services/wiki) ) 
