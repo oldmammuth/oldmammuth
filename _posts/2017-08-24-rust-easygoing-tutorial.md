@@ -162,7 +162,7 @@ Just create a new cargo project (```cargo new greetings --bin```), or modify the
  * file: src/main.rd
  */
 /// Program to make good first impressions on your *rust* environment
-/// Go ahead, and `` ` ```` ` ```` ` ``cargo run`` ` ```` ` ```` ` `` it!
+/// Go ahead, and *cargo run* it!
 use std::io;
 
 fn main() {
