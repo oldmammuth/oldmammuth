@@ -17,9 +17,9 @@ Si comincia sempre dall'istallazione, no? Basta puntare il browser sul [sito uff
 
 |Sistema operativo | link utile |note           |
 |------------------|------------|---------------|
-| Windows (c)(tm)  | https://www.python.org/ftp/python/3.6.1/python-3.6.1-amd64.exe | x86 o x64 (non Itanium)|
-|MAC OSX (c)(tm)   | https://www.python.org/ftp/python/3.6.1/python-3.6.1-macosx10.6.pkg | Mac OS X 10.6 e successivi |
-| Linux | http://www.python.org/ftp/python/3.6.1/Python-3.6.1.tar.xz | **Meglio usare il package manafer della propria distribuzione**, e.g: ```apt-get install python3``` per Debian e derivati (Ubuntu, Mint...) |
+| Windows (c)(tm)  | [https://www.python.org/ftp/python/3.6.1/python-3.6.1-amd64.exe](https://www.python.org/ftp/python/3.6.1/python-3.6.1-amd64.exe) | x86 o x64 (non Itanium)|
+|MAC OSX (c)(tm)   | [https://www.python.org/ftp/python/3.6.1/python-3.6.1-macosx10.6.pkg](v) | Mac OS X 10.6 e successivi |
+| Linux | [http://www.python.org/ftp/python/3.6.1/Python-3.6.1.tar.xz](http://www.python.org/ftp/python/3.6.1/Python-3.6.1.tar.xz) | **Meglio usare il package manafer della propria distribuzione**, e.g: ```apt-get install python3``` per Debian e derivati (Ubuntu, Mint...) |
 
 Ovviamente è sempre possibile che già abbiate il python pre-istallato sul vostro sistema...
 
@@ -64,7 +64,7 @@ A proposito: ogni programma si divide in righe, che possono essere numerate. Rag
 ## Esecuzione del programma
 
 Tutto bene fin'ora, ma come si fa girare il programma?
-Se mi avete seguiro e avete salvato il file come *helloworld.py*, basta aprire un terminale ed eseguire:
+Se mi avete seguito fin'ora e avete salvato il file come *helloworld.py*, basta aprire un terminale ed eseguire:
 
 ```shell
 python helloworld.py
